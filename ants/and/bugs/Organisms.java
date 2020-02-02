@@ -3,7 +3,13 @@ package ants.and.bugs;
 
 public abstract class Organisms {
     
-    private int posX, posY;
+    public static final int DIRECTION_UP = 0;
+    public static final int DIRECTION_LEFT = 1;
+    public static final int DIRECTION_RIGHT = 2;
+    public static final int DIRECTION_DOWN = 3;
+    
+    
+    private int posX=0, posY=0;
     
    public int GetPosX(){
        return posX;
@@ -17,7 +23,7 @@ public abstract class Organisms {
        return this.posX = posX;
    }
    
-   public int SetPostY(int posY){
+   public int SetPosY(int posY){
        return this.posY = posY;
    }
    
